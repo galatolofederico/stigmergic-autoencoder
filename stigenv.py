@@ -1,10 +1,10 @@
 import gym
 import numpy as np
 
-class AutoEncoderEnv(gym.Env):
+class StigAutoEncoderEnv(gym.Env):
     metadata = {'render.modes': ['human']}
     def __init__(self, world, isShared=False):
-        super(AutoEncoderEnv, self).__init__()
+        super(StigAutoEncoderEnv, self).__init__()
 
         self.reset()
         
