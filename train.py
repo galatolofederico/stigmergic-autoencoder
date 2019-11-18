@@ -10,7 +10,7 @@ from stable_baselines.common.vec_env import VecFrameStack, DummyVecEnv
 
 dataset = MNIST()
 ae = StigAutoEncoderEnv(size=10, dataset=dataset)
-ae.feed()
+ae.fill()
 env = DummyVecEnv(([lambda: ae]))
 
 
