@@ -1,2 +1,3 @@
-env/
-tb_logs/
+/env
+/tb_logs
+__pycache__/
