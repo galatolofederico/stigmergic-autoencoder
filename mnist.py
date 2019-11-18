@@ -46,5 +46,15 @@ class MNIST:
         np.save(self.cache_loc+"/y_test.npy", y_test)
 
 
+    def scale(self, max):
+        self.x_train = (self.x_train/255)*max
+        self.x_test = (self.x_test/255)*max
+
+    def get_train(self):
+        return self.x_train, self.y_train
+    
+    def get_test(self):
+        return self.x_test, self.y_test
+
 
 MNIST()
